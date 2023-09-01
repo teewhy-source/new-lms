@@ -23,7 +23,7 @@ const SideBar = () => {
           <Link to="/PageNotFound" className='flex flex-row items-center justify-around gap-[0.2rem] hover:bg-gradient-to-r from-[white] via-[grey] to-[yellow] p-[0.4rem] hover:translate-x-5 hover:rounded-2xl hover:transition-all'> <FaAward/> Awards</Link>
           <Link to="/PageNotFound" className='flex flex-row items-center justify-around gap-[0.2rem] hover:bg-gradient-to-r from-[white] via-[grey] to-[yellow] p-[0.4rem] hover:translate-x-5 hover:rounded-2xl hover:transition-all'> <MdQuiz/> Quizzes</Link>
           <Link to="/PageNotFound" className='flex flex-row items-center justify-around gap-[0.2rem] hover:bg-gradient-to-r from-[white] via-[grey] to-[yellow] p-[0.4rem] hover:translate-x-5 hover:rounded-2xl hover:transition-all'> <FiSettings/> Settings</Link>
-          <Link to="/PageNotFound" className='flex flex-row items-center justify-around gap-[0.2rem] hover:bg-gradient-to-r from-[white] via-[grey] to-[yellow] p-[0.4rem] hover:translate-x-5 hover:rounded-2xl hover:transition-all'> <BiLogOut/> Log Out</Link>
+          <Link to="/" className='flex flex-row items-center justify-around gap-[0.2rem] hover:bg-gradient-to-r from-[white] via-[grey] to-[yellow] p-[0.4rem] hover:translate-x-5 hover:rounded-2xl hover:transition-all'> <BiLogOut/> Log Out</Link>
         </div>
     </div>
   )
