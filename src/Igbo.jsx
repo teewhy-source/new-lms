@@ -12,7 +12,7 @@ const Igbo = () => {
   return (
     <div>
     <Taiyeheader/>
-      <div className="content-container p-4">
+      <div className="content-container p-4 ">
       <YouTube
           videoId={videoId}
           opts={opts}
