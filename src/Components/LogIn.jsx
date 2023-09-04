@@ -1,7 +1,4 @@
 import React from 'react'
-
-
-
 import Contents from './Contents'
 import Taiyeheader from './Taiyeheader'
 

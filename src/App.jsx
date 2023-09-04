@@ -19,6 +19,12 @@ import Display from "./Display";
 import Profile from "../src/pages/Profile";
 import Courses from "../src/pages/Courses";
 import PageNotFound from "../src/PageNotFound";
+import Administrator from "./Components/Admin/Administrator";
+import AdminDashBoard from "./Components/Admin/AdminPages/AdminDashBoard";
+import AdminInstructor from "./Components/Admin/AdminPages/AdminInstructor";
+import Approved from "./Components/Admin/AdminPages/Approved";
+import CoursePage from "./Components/Coursepage";
+import CourseUpload from "./pages/CourseUpload";
 
 const App = () => {
   return (
@@ -44,8 +50,18 @@ const App = () => {
         <Route path="/Display" element={<Display />}>
           <Route path="/Display/profile" element={<Profile />}></Route>
           <Route path="/Display/Courses" element={<Courses />}></Route>
+          <Route path="/Display/CourseUpload" element={<CourseUpload />}></Route>
         </Route>
         <Route path="*" element={<PageNotFound />} />
+
+        <Route element={<Administrator/>}>
+  <Route path='/AdminDashBoard' element= {<AdminDashBoard/>}/>
+<Route path='/Instructor' element={<AdminInstructor/>}/>
+<Route path='/Coursepage' element={<CoursePage />}/>
+<Route path='/Approved' element={<Approved/>}/>
+</Route>
+
+        
       </Routes>
     </div>
   );
