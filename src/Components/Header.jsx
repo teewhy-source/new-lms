@@ -8,7 +8,7 @@ const Header = ({ pageTitle }) => {
      
       <div className='flex items-center justify-between bg-[#bdbbbb] px-[4rem] py-[0.7rem] rounded-md'> 
         <img src={ avatar } alt="" className='w-[2rem]' /> 
-        <h1 className=''>{pageTitle}</h1>
+        <h1 >{pageTitle}</h1>
       </div>
     </header>
   )

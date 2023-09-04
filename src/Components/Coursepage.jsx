@@ -82,7 +82,7 @@ const CoursePage = () => {
   }
   return (
     <div>
-      <Taiyeheader/>
+      {/* <Taiyeheader/> */}
     <div className="flex flex-wrap ">
       
       <div className="w-1/4 bg-gray-800  text-white p-4 ">

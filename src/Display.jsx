@@ -9,7 +9,7 @@ const Display = () => {
   
 
   return (
-    <div className='h-[100svh] grid grid-cols-[10%_1fr] bg-[#f5f5f5] overflow-hidden gap-[1rem]'>
+    <div className='h-[100svh] grid grid-cols-[13%_1fr] bg-[#f5f5f5]gap-[1rem]'>
         <SideBar></SideBar>
 
         <div className='grid grid-rows-[10%_1fr]'>
