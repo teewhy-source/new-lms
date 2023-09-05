@@ -95,7 +95,7 @@ const Courses = () => {
           return (
             <div
               key={index}
-              className="h-[9rem] w-80 bg-[white] rounded-md shadow-md shadow-[grey] cursor-pointer flex flex-col justify-center items-center hover:translate-y-5 hover:bg-[#e4dfdf] hover:text-[#14408b]"
+              className="h-[9rem] w-80 bg-[white] text-[#08538C] rounded-md shadow-md shadow-[grey] cursor-pointer flex flex-col justify-center items-center hover:translate-y-5 hover:bg-[#e4dfdf] hover:text-[#14408b]"
             >
               {/* <div className='h-[10rem] w-[10rem] mx-auto'>{course.image}</div> */}
               <h1 className="font-extrabold text-center">
@@ -109,11 +109,11 @@ const Courses = () => {
         })}
       </div>
 
-      <div className="w-[90%] mx-auto">
+      <div className="w-[90%] text-[#08538C] mx-auto">
         <Table
           dataSource={data}
           columns={columns}
-          style={{ backgroundColor: "white", borderRadius: "1rem" }}
+          style={{ backgroundColor: "text-[#08538C]", borderRadius: "1rem" }}
           pagination={2}
         >
           <Pagination defaultCurrent={1} total={50} />

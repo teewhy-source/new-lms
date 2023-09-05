@@ -42,8 +42,8 @@ const Contents = () => {
   };
   return (
     <div className="text-black pt-[3rem] bg-inherit  ">
-      <div className="text-4xl font-semibold text-center">Welcome Back</div>
-      <div className="text-lg font-normal text-center">
+      <div className="text-4xl text-[#08538c] font-semibold text-center">Welcome Back</div>
+      <div className="text-lg text-[#08538c] font-normal text-center">
         Login into your account
       </div>
       <form
@@ -82,7 +82,7 @@ const Contents = () => {
 
               <label
                 htmlFor="Remember"
-                className="text-zinc-900 text-xs font-normal tracking-tight"
+                className="text-zinc-900 text-[#08538c] text-xs font-normal tracking-tight"
               >
                 {" "}
                 Remember me
@@ -92,7 +92,7 @@ const Contents = () => {
         </div>
 
         <div>
-          <button className="text-red-600 text-sm font-light top-[1.5px]">
+          <button className="text-[#08538c] text-sm font-light top-[1.5px]">
             Recover Password
           </button>
         </div>

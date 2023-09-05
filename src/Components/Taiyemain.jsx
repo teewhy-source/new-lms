@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import taiye from "./images/teewhy.jpg";
+import taiye from "../images/pexels-photo-2861798.jpeg";
 
 export default class Taiyemain extends Component {
   render() {

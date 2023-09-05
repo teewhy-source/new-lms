@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import taiye from "../Components/images/teewhy.jpg"; // Import your course image
+import taiye from "../Components/images/code.jpeg"; // Import your course image
 import Taiyeheader from "./Taiyeheader";
 const CoursePage = () => {
   const [activeTab, setActiveTab] = useState("Overview");
@@ -14,14 +14,16 @@ const CoursePage = () => {
       description: "This is an introduction to JavaScript for beginners.",
       duration: "1 hour 30 minutes",
       learning: "Basics of JavaScript programming",
-      url: "/javascript"
+      url: "/javascript",
+      courseImage: taiye
     },
     {
       title: "React",
       description: "An introductory course on the React framework.",
       duration: "3 hours",
       learning: "Building user interfaces with React",
-      url: "/Ractcomponent"
+      url: "/Ractcomponent",
+      courseImage: taiye
     },
     {
       title: "Blockchain and Cryptocurrency",
@@ -29,14 +31,15 @@ const CoursePage = () => {
         "Courses on the technology behind cryptocurrencies and blockchain development.",
       duration: "3 hours",
       learning: "Basics of cryptocurrencies and blockchain development",
-      url:"/Blockchaincomponent"
+      url:"/Blockchaincomponent",
+      courseImage: taiye
     },
     // Add more courses as needed
   ];
   const languages = [
-    { title: "Yoruba", url: "/Yoruba"},
-    { title: "Hausa", url: "/Hausa" },
-    { title: "Igbo", url:"/Igbo" },
+    { title: "Yoruba", url: "/Yoruba", courseImage: taiye},
+    { title: "Hausa", url: "/Hausa", courseImage: taiye },
+    { title: "Igbo", url:"/Igbo", courseImage: taiye },
   ];
   const codingCourses = [
     {
@@ -82,7 +85,7 @@ const CoursePage = () => {
   }
   return (
     <div>
-      {/* <Taiyeheader/> */}
+      <Taiyeheader/>
     <div className="flex flex-wrap ">
       
       <div className="w-1/4 bg-gray-800  text-white p-4 ">

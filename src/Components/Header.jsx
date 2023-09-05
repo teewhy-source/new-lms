@@ -4,7 +4,7 @@ import avatar from '../images/avatar.jpg'
 const Header = ({ pageTitle }) => {
   return (
     <header className='flex items-center justify-between px-[2rem] bg-[white] shadow-md shadow-[grey]'>
-      <h1 className='font-bold text-[1.5rem]'>Welcome {pageTitle}</h1>
+      <h1 className='font-bold text-[#08538c] ml-[1rem] text-[1.5rem]'>Welcome {pageTitle}</h1>
      
       <div className='flex items-center justify-between bg-[#bdbbbb] px-[4rem] py-[0.7rem] rounded-md'> 
         <img src={ avatar } alt="" className='w-[2rem]' /> 

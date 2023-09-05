@@ -63,27 +63,28 @@ const SignUpForm = () => {
   };
 
   return (
-    <div className="bg-[white] w-[100%] h-[100vh] ">
+    <div className="bg-[white] min-h-screen bg-no-repeat bg-cover ">
     <Taiyeheader/>
       <form
         onSubmit={handleSubmit}
-        className=" w-[35rem] ml-[35%] mt-[5rem] shadow-md rounded px-8 pt-6 pb-8 mb-4"
+        className="max-w-xl mx-auto mt-10 shadow-md rounded px-4 py-8"
+        
       >
         <div className="mb-4">
           <label
-            className="block text-[#08538c] text-sm font-bold mb-2"
-            htmlFor="firstName"
+     className="block text-[#08538c] text-sm font-bold mb-2"            htmlFor="firstName"
           >
             First Name
           </label>
           <input
-            className="shadow-md appearance-none border border-[#08538c] h-[4rem]  rounded w-full py-2 px-3 text-[#08538c] leading-tight focus:outline-none focus:shadow-outline"
+            className="shadow-md appearance-none border border-[#08538c] rounded w-full py-2 px-3 text-[#08538c] leading-tight focus:outline-none focus:shadow-outline"
             id="firstName"
             type="text"
             name="firstName"
             value={formData.firstName}
             onChange={(e) => handleInputChange("firstName", e.target.value)}
             required
+            placeholder="FIRST NAME"
           />
         </div>
 
@@ -102,6 +103,7 @@ const SignUpForm = () => {
             value={formData.lastName}
             onChange={(e) => handleInputChange("lastName", e.target.value)}
             required
+            placeholder="LAST NAME"
           />
         </div>
 
@@ -120,6 +122,7 @@ const SignUpForm = () => {
             value={formData.email}
             onChange={(e) => handleInputChange("email", e.target.value)}
             required
+            placeholder="EMAIL"
           />
         </div>
 
@@ -138,12 +141,12 @@ const SignUpForm = () => {
             value={formData.password}
             onChange={(e) => handleInputChange("password", e.target.value)}
             required
+            placeholder="PASSWORD"
           />
         </div>
 
         <div className="mb-4">
-  <label className="block text-[#08538c] text-sm font-bold mb-2">
-   COURES
+        <label className="block text-[#08538c] text-sm font-bold mb-2">   COURES
   </label>
   {courses.map((item) => (
     <label key={item} className="inline-flex  items-center mr-4">
@@ -151,6 +154,7 @@ const SignUpForm = () => {
         type="checkbox"
         name="courses"
         value={item}
+        required
       
         onChange={(e) => handleInputChange("courses", e.target.value)}
       />
@@ -160,7 +164,7 @@ const SignUpForm = () => {
 </div>
 
 
-        <div className="flex items-center justify-between">
+<div className="flex flex-col items-center justify-center sm:flex-row sm:justify-between">
           <button
             className="bg-[#333983] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
             type="submit"
@@ -168,7 +172,7 @@ const SignUpForm = () => {
          <Link to='/LogIn'> Sign Up</Link>  
           </button>
         </div>
-        <div className="text-[text-[#08538c]] text-center">{message}</div>
+        <div className="text-[#08538c] text-center">{message}</div>
       </form>
     </div>
   );

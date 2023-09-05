@@ -1,107 +1,121 @@
 import React from "react";
 
-
 const CourseUpload = () => {
   return (
-    <div className=" h-[100vh] justify-center  items-center  bgImg bg-no-repeat bg-cover text-white  ">
-      <form
-        method="post"
-        className="grid grid-cols-2 gap-[2rem] grid-rows-5 place-content-center place-items-center "
-      >
-      
-<div className=" flex flex-col gap-1 ">
-<label htmlFor="" className=" text-[1.1rem] font-medium" >Course title</label>
-        <input
-          type="text"
-          placeholder="Course title"
-          className="w-[24rem] h-16 text-black  rounded-lg font-extralight border border-zinc-300 pl-5 bg-white "
-        />
-</div>
-<div className=" flex flex-col gap-1 ">
-<label htmlFor="" className=" text-[1.1rem] font-medium" >Course Description</label>
-        <input
-          type="text"
-          placeholder="Course Description"
-          className="w-[24rem] tracking-tight h-16 rounded-lg font-extralight border border-zinc-300  bg-white pl-5  "
-        />
-
-</div>
-
-<div className=" flex flex-col gap-1 ">
-<label htmlFor="" className=" text-[1.1rem] font-medium" >Course Duration</label>
-        <input
-          type="text"
-          name=""
-          id=""
-          placeholder="Course Duration"
-          className="w-[24rem] font-extralight h-16 rounded-lg border border-zinc-300  bg-white pl-5 "
-        />
-
-</div>
-<div className=" flex flex-col gap-1 ">
-<label htmlFor="" className=" text-[1.1rem] font-medium" >Learning Objectives</label>
-        <input
-          type="text"
-          placeholder="Learnin Objectives"
-          className="w-[24rem] h-16 rounded-lg font-extralight border border-zinc-300  bg-white  pl-5 "
-        />
-</div>
-
-<div className=" flex flex-col gap-1 ">
-       <label htmlFor="" className=" text-[1.1rem] font-medium" >Date Created</label>
-        <input
-          type="date"
-          name=""
-          id=""
-          placeholder="DateCreated"
-          className="w-[24rem] font-extralight h-16 rounded-lg border border-zinc-300 pl-5  bg-white  text-zinc-400 "
-        />
-</div>       
-
-<div className="flex flex-col gap-1  ">
-<label htmlFor="" className=" text-[1.1rem] font-medium" >Created By</label>
-        <input
-          type="text"
-          placeholder="CreatedBy"
-          className="w-[24rem] h-16 font-extralight rounded-lg border border-zinc-300  bg-white pl-5 "
-        />
-</div>
-
-<div className="flex flex-col gap-1  ">
-<label htmlFor="" className=" text-[1.1rem] font-medium" >Date Updated</label>
-        <input
-          type="date"
-          name=""
-          id=""
-          placeholder="Date Updated"
-          className="w-[24rem] font-extralight h-16 rounded-lg border border-zinc-300 pl-5  bg-white   "
-        />
-</div>
-
-<div className="flex flex-col gap-1  ">
-<label htmlFor="" className=" text-[1.1rem] font-medium" >Updated By</label>
-        <input
-          type="text"
-          placeholder="Updated By"
-          className="w-[24rem] font-extralight h-16 rounded-lg border border-zinc-300  bg-white pl-5 "
-        />
-        
-</div>
-<div className="flex flex-col gap-1   ">
-       <label htmlFor="" className=" text-[1.1rem] font-medium" >Upload Course</label>
-        <input
-          type="file"
-          src=""
-          alt=""
-          placeholder="Upload Course I"
-          className=" rounded-lg border border-zinc-300 bg-white pl-5  "
-        />
-       </div>
-
-       <button type="submit" className="  w-[24rem] h-16  rounded-lg  bg-black bg-opacity-50 hover:bg-[#5bbcb3]">Submit</button>
-
-     
-      </form>
+    <div className="min-h-screen flex justify-center items-center bg-gray-100 py-10">
+      <div className="container mx-auto bg-white rounded-lg shadow-lg p-8">
+      <h2 className="text-2xl text-[#08538C] font-semibold text-center mb-6">
+          Upload a New Course
+        </h2>
+        <form className="grid grid-cols-1 text-[#08538C] md:grid-cols-2 gap-6">
+          <div className="flex flex-col">
+            <label htmlFor="courseTitle"
+             className="text-lg text-[#08538C] border-[#08538C] font-medium">
+              Course Title
+            </label>
+            <input
+              type="text"
+              id="courseTitle"
+              className="w-[20rem] h-[3rem] text-[#08538C] border-[#08538C] border-[5px] rounded-[2rem]"
+              placeholder="Enter Course Title"
+            />
+          </div>
+          <div className="flex flex-col">
+            <label htmlFor="courseDescription" 
+            className="text-lg text-[#08538C] font-medium">
+              Course Description
+            </label>
+            <input
+              type="text"
+              id="courseDescription"
+              className="w-[20rem] text-[#08538C] h-[3rem] border-[#08538C] border-[5px] rounded-[2rem]"
+              placeholder="Enter Course Description"
+            />
+          </div>
+          <div className="flex flex-col">
+            <label htmlFor="courseDuration" className="text-lg border-[#08538C] text-[#08538C] font-medium">
+              Course Duration
+            </label>
+            <input
+              type="text"
+              id="courseDuration"
+              className="w-[20rem] text-[#08538C] h-[3rem] border-[#08538C] border-[5px] rounded-[2rem]"
+              placeholder="Enter Course Duration"
+            />
+          </div>
+          <div className="flex flex-col">
+            <label htmlFor="learningObjectives" className="text-lg text-[#08538C] font-medium">
+              Learning Objectives
+            </label>
+            <input
+              type="text"
+              id="learningObjectives"
+              className="w-[20rem] text-[#08538C] h-[3rem] border-[#08538C] border-[5px] rounded-[2rem]"
+              placeholder="Enter Learning Objectives"
+            />
+          </div>
+          <div className="flex flex-col">
+            <label htmlFor="dateCreated" className="text-lg text-[#08538C] font-medium">
+              Date Created
+            </label>
+            <input
+              type="date"
+              id="dateCreated"
+              className="w-[20rem] h-[3rem] text-[#08538C] border-[#08538C] border-[5px] rounded-[2rem]"
+            />
+          </div>
+          <div className="flex flex-col">
+            <label htmlFor="createdBy" className="text-lg text-[#08538C] font-medium">
+              Created By
+            </label>
+            <input
+              type="text"
+              id="createdBy"
+              className="w-[20rem] h-[3rem] text-[#08538C] border-[#08538C] border-[5px] rounded-[2rem]"
+              placeholder="Enter Creator's Name"
+            />
+          </div>
+          <div className="flex flex-col">
+            <label htmlFor="dateUpdated" className="text-lg text-[#08538C] font-medium">
+              Date Updated
+            </label>
+            <input
+              type="date"
+              id="dateUpdated"
+              className="w-[20rem] h-[3rem] border-[5px] border-[#08538C] text-[#08538C] rounded-[2rem]"
+            />
+          </div>
+          <div className="flex flex-col">
+            <label htmlFor="updatedBy" className="text-lg text-[#08538C] font-medium">
+              Updated By
+            </label>
+            <input
+              type="text"
+              id="updatedBy"
+              className="w-[20rem] h-[3rem] border-[5px] border-[#08538C] text-[#08538C] rounded-[2rem]"
+              placeholder="Enter Updater's Name"
+            />
+          </div>
+          <div className="flex flex-col">
+            <label htmlFor="courseFile" className="text-lg text-[#08538C] font-medium">
+              Upload Course
+            </label>
+            <input
+              type="file"
+              id="courseFile"
+              className="w-[20rem] h-[3rem] border-[5px] border-[#08538C] text-[#08538C] rounded-[2rem]"
+            />
+          </div>
+          <div className="col-span-2">
+            <button
+              type="submit"
+              className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 ease-in-out"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   );
 };
