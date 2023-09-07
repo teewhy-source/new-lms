@@ -29,7 +29,7 @@ export default class Taiyemain extends Component {
           </div>
         </div>
 
-        <div className="bg-white px-10 md:px-[10rem] pt-4 md:pt-[4rem]">
+        <div className="bg-white px-10 md:px-[10rem] pt-4 md:pt-[2rem]">
           <img
             src={taiye}
             alt=""

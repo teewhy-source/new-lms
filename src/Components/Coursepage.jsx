@@ -39,7 +39,7 @@ const CoursePage = () => {
   const languages = [
     { title: "Yoruba", url: "/Yoruba", courseImage: taiye},
     { title: "Hausa", url: "/Hausa", courseImage: taiye },
-    { title: "Igbo", url:"/Igbo", courseImage: taiye },
+    { title: "Igbo", url:"/Igbo", courseImage:taiye },
   ];
   const codingCourses = [
     {
@@ -86,13 +86,13 @@ const CoursePage = () => {
   return (
     <div>
       <Taiyeheader/>
-    <div className="flex flex-wrap ">
+    <div className="flex flex-wrap  ">
       
       <div className="w-1/4 bg-gray-800  text-white p-4 ">
         {tabs.map((tab, index) => (
           <div
             key={index}
-            className={`tab cursor-pointer p-2 rounded-md  ${
+            className={`tab cursor-pointer p-2  rounded-md  ${
               activeTab === tab ? "bg-blue-500 text-white" : ""
             }`}
             onClick={() => handleTabChange(tab)}
@@ -110,7 +110,7 @@ const CoursePage = () => {
           >
             {activeTab === "Overview" && (
               <Link to={data.url}>
-                <div className="w-[15rem]">
+                 <div className="w-[15rem]">
                   {data.title && (
                    
                       <h3 className="text-lg font-medium ">{data.title}</h3>
