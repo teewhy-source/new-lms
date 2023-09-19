@@ -28,6 +28,7 @@ const ContactUs = () => {
       <div
         className="flex items-center justify-center min-h-screen bg-gray-900 font-[archivo-regular]"
         id="contact"
+        
       >
         <form
           ref={form}
@@ -46,6 +47,7 @@ const ContactUs = () => {
               id="name"
               type="text"
               placeholder="Name"
+              required
             />
           </div>
 
@@ -61,6 +63,7 @@ const ContactUs = () => {
               id="email"
               type="email"
               placeholder="email@example.com"
+              required
             />
           </div>
 
@@ -75,7 +78,8 @@ const ContactUs = () => {
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               id="message"
               rows="4"
-              placeholder="Message"
+              placeholder="Message US"
+              required
             ></textarea>
           </div>
 

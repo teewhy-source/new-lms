@@ -8,6 +8,7 @@ const Layout = () => {
     <div className="h-[100svh]">
       <Taiyeheader />
       <Taiyemain />
+   
     </div>
   );
 };

@@ -85,14 +85,13 @@ const CoursePage = () => {
   }
   return (
     <div>
-      <Taiyeheader/>
-    <div className="flex flex-wrap  ">
-      
-      <div className="w-1/4 bg-gray-800  text-white p-4 ">
+    <Taiyeheader />
+    <div className="flex flex-wrap">
+      <div className="w-full md:w-1/4 bg-gray-800 text-white p-4">
         {tabs.map((tab, index) => (
           <div
             key={index}
-            className={`tab cursor-pointer p-2  rounded-md  ${
+            className={`tab cursor-pointer p-2 rounded-md ${
               activeTab === tab ? "bg-blue-500 text-white" : ""
             }`}
             onClick={() => handleTabChange(tab)}
@@ -101,20 +100,18 @@ const CoursePage = () => {
           </div>
         ))}
       </div>
-      <div className="flex-1 pl-[4rem] gap-[2rem] flex flex-wrap p-4 space-y-4">
+      <div className="w-full md:flex-1 md:pl-[4rem] md:pt-4 flex flex-wrap p-4 space-y-4">
         {/* Content based on the activeTab */}
         {displayData.map((data, index) => (
           <div
             key={index}
-            className="bg-white rounded-md  p-4 w-[20rem] text-[#08538C] text-center py-px-[6rem] shadow-md transition-transform transform hover:-translate-y-2"
+            className="bg-white rounded-md p-4 w-full md:w-[20rem] text-[#08538C] py-2 md:px-4 shadow-md transition-transform transform hover:-translate-y-2 md:mx-auto"
           >
             {activeTab === "Overview" && (
               <Link to={data.url}>
-                 <div className="w-[15rem]">
+                <div className="w-[15rem] mx-auto">
                   {data.title && (
-                   
-                      <h3 className="text-lg font-medium ">{data.title}</h3>
-                    
+                    <h3 className="text-lg font-medium">{data.title}</h3>
                   )}
                   {data.description && <p>{data.description}</p>}
                   {data.duration && (
@@ -127,7 +124,7 @@ const CoursePage = () => {
                     <img
                       src={data.courseImage}
                       alt={data.title}
-                      className="mt-2 rounded-md "
+                      className="mt-2 rounded-md mx-auto"
                     />
                   )}
                 </div>
@@ -142,14 +139,14 @@ const CoursePage = () => {
               </div>
             )}
             {activeTab === "Coding" && (
-             <Link to={data.url}>
+              <Link to={data.url}>
                 <div>
                   <h3 className="text-lg font-medium">{data.title}</h3>
                   <p>{data.description}</p>
                   <img
                     src={data.courseImage}
                     alt={data.title}
-                    className="mt-2 rounded-md"
+                    className="mt-2 rounded-md mx-auto"
                   />
                 </div>
               </Link>
@@ -158,7 +155,7 @@ const CoursePage = () => {
         ))}
       </div>
     </div>
-    </div>
+  </div>
   );
 };
 export default CoursePage;
